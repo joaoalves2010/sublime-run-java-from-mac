@@ -1,0 +1,14 @@
+Tags: Guia JAVA, Recursos, Texto Sublime
+Neste post vamos ver como configurar uma chamada Texto Sublime Sistema de Compilação para pressionar ctrl + b irá compilar e executar o aplicativo em Java.
+
+A primeira coisa a fazer é começar Texto Sublime, uma vez que encontrá-lo feito, vamos Ferramentas -> Criar Sistema -> novo sistema de montagem ... Isto irá abrir um arquivo pequeno, com algumas linhas escritas em JSON, por isso devemos copiar o seguinte código e colar neste arquivo.
+
+
+// Código válido para Windows e Linux
+{
+     "Cmd": ["$ {} file_name javac && java file_base_name $ {}"],
+     "Shell": true
+}
+Quando encontramos realmente salvar o arquivo na pasta onde ele sugere Texto Sublime, e nós colocamos um nome descritivo, como ejecutarJava.sublime-build, cuidado para que a extensão do arquivo é .sublime-build.
+
+E com isso que estamos a fazer, para compilar e executar programas em Java, você só precisa ir para Ferramentas -> Build System e escolha o nome do arquivo que você modificou anteriormente no meu caso ejecutarJava. A partir de agora, podemos compilar e executar programas em Java pressionando CTRL + b.
